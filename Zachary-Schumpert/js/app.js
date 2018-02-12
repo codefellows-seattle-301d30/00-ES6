@@ -35,8 +35,8 @@ function displayPics(){
     }
   }
   console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `let to `let`.
-  // Because 'let' is not able to be used within a while loop, where 'var' is acceptable.
+  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the letiable declaration from `let to `let`.
+  // because 'let' is not able to be used in a while loop where 'var' can be used.
   console.log(viewed)
 
   // To the DOM and beyond!
