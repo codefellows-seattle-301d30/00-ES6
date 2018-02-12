@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+You needed to convert the `const`'s that were in for loops as they were being re-assigned with each iteration of the loop. Also the global variables that were re-assigned later needed to be `let`. "total clicks" was continually being added to and the "allProducts" array was reassigned with data from local storage. 
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Converting from one to the other was a bit of work, but I think it will be easier to use the template literal to begin with. I will definitely use it from now on as it looks much cleaner and I tend to forget the "+" a lot when I concatenate so if I use template literal notation that won't even be an issue. Definitely glad we are able to use it now.
