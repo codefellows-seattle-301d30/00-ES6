@@ -42,10 +42,10 @@ function displayPics(){
 
   // To the DOM and beyond!
   for (let i = 0; i < 3; i++){
-    const temp = viewed.shift(); // LET ISSUE?
+    const temp = viewed.shift();
     pics[i].src = allProducts[temp].path;
     pics[i].id = allProducts[temp].name;
-    allProducts[temp].views += 1;  // LET ISSUE?
+    allProducts[temp].views += 1;
   }
 }
 
