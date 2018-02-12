@@ -1,18 +1,18 @@
 'use strict';
 
-let names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
 let allProducts = [];
-let container = document.getElementById('image_container');
-let viewed = [];
-let labels = [];
-let pics = [document.getElementById('left'),
+const container = document.getElementById('image_container');
+const viewed = [];
+const labels = [];
+const pics = [document.getElementById('left'),
                 document.getElementById('center'), //eslint-disable-line
                 document.getElementById('right')]; //eslint-disable-line
-let list = document.getElementById('productlist');
+const list = document.getElementById('productlist');
 let totalClicks = 0;
-let views = [];
-let votes = [];
+const views = [];
+const votes = [];
 
 function Product(name) {
   this.name = name;
@@ -33,8 +33,8 @@ function displayPics(){
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
+    console.log(rando);
   }
-  console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
 
   // let has a scope of it's block (or sub blocks) in which they are defined. Var has a scope of the entire enclosing function. When we changed 'var to let', the console log couldn't access it.
@@ -126,7 +126,7 @@ document.getElementById('bus').addEventListener('click', function(){
 
 if(localStorage.busmall){
   console.log('Local storage data exists');
-  allProducts = JSON.parse(localStorage.busmall)
+  allProducts = JSON.parse(localStorage.busmall);
 } else {
   console.log('There is no local storage data; initialize app by creating instances');
   for(let i = 0; i < names.length; i++) {
