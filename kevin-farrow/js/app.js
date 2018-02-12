@@ -10,7 +10,7 @@ const pics = [document.getElementById('left'),
                 document.getElementById('center'), //eslint-disable-line
                 document.getElementById('right')]; //eslint-disable-line
 const list = document.getElementById('productlist');
-const totalClicks = 0;
+let totalClicks = 0;
 let views = [];
 let votes = [];
 
