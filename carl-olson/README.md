@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+All of the for loops needed `let`. Other than that, two of the global variables needed to be changed to `let`. I believe the array of objects needs to use `let` so that it can be reassigned from local storage. And `totalClicks` needs to use `let` because it's an integer that's being incremented with each click.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It went fine...the longer strings with lots of concatenations are definitely better using template literals. The file path property value felt clearer as a concatenation. 
