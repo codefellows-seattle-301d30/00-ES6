@@ -22,7 +22,7 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-I had to convert const into let in any situation where I need a vaiable to to change values like in a loop.
+I had to convert const into let in any situation where I need a variable to to change values like in a loop. Also I could not use const for allproducts array beacasue later in the code I assign it a new value. 
 
 ---
 
