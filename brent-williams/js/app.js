@@ -36,8 +36,8 @@ function displayPics(){
   }
   console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
-  console.log(viewed)
+  // The previous line of code relies upon var being hoisted to the top of displayPics. let scopes locally with less hoisting, so rando would not be available.
+  console.log(viewed);
 
   // To the DOM and beyond!
   for (var i = 0; i < 3; i++){
