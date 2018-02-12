@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+(I had to change any variable to let that had to be redefined elsewhere. Specifically, this mostly came down to all the i variables iterating through the loops. But I also had to change the allProducts array. This is because later in the code it was redefined to the localStorage value which is not how const arrays work. You can push to them but no redefine the values of any index.)
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+(Template literal is so much cleaner. The only mistake I made when implementing it was using '' vs ``. I was baffled for a minute on why it wasn't working just cause of that.)
